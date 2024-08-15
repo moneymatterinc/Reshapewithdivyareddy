@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-section left">
+            <button class="menu-toggle" onclick="openNav()">☰ Menu</button>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#services">Services</a>
+            <a href="#faq">FAQ</a>
+            <a href="#events">Events</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#" onclick="closeNavOpenPopUp()">Contact</a>
+        </div>
+
+        <div class="header-section center">
+            <p>RESHAPE WITH DIVYA REDDY</p>
+        </div>
+        <div class="header-section right">
+            <button onclick="openPopUp()"> Contact</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-side">
+            <div>
+                <h1> TO IMPROVE HEALTH </h1>
+                <button onclick="openPopUp()"> GET IN TOUCH </button>
+            </div>
+        </div>
+ <div class="right-side">
+            <img class="right" src="d2.jpg" />
+        </div>
+    </div>
+
+    <div class="header-section center" id = "services">
+        <h2> SERVICES</h2>
+    </div>
+
+    <div class="container">
+            <div class="card">
+                <img src="img/weight1.png" alt="Avatar" style="width:50%;height: 50%; ">
+                <h6>Weight Loss</h6>
+                <!-- <p>We help people to loose 6-10 Kgs weight in 60 days in a healthy way. </p> -->
+            </div>
+            <div class="card">
+                <img src="img/diabetes.png" alt="Avatar" style="width:50%;height: 50%;">
+                <h6>Type 2 Diabetes Reversal</h6>
+                <!-- <p>We help people with type 2 diabetes reverese their condition and help them live in a healthy way without any medication.               </p> -->
+            </div>
+            <div class="card">
+                <img src="img/pcod.png" alt="Avatar" style="width:50%;height: 50%;">
+                <h6>Pcod/Pcos Reversal</h6>
+            </div>
+            <div class="card">
+                <img src="img/infertlity.avif" alt="Avatar" style="width:50%;height: 50%;">
+                <h6>Infertility</h6>
+                <!-- <p>We help couples to become parents by solving their infertility(both male & female) issues</p> -->
+            </div>
+            
+      </div>
+
+      <section class="faq-section header-section center" id = "faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">Do i need to eat less to lose wight?</button>
+            <div class="faq-answer">
+                <p>Our return policy allows you to return products within 30 days of purchase. Please ensure items are in their original packaging.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">Do i need to do exercises?</button>
+            <div class="faq-answer">
+                <p>You can track your order using the tracking number provided in your shipping confirmation email.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">Is diet is customized for me?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer international shipping to many countries. Please check our shipping policy for more details.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">Will i gain weight after i stop diet?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer international shipping to many countries. Please check our shipping policy for more details.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">How can i join weight loss program?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer international shipping to many countries. Please check our shipping policy for more details.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">Is this is a Guaranteed program?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer international shipping to many countries. Please check our shipping policy for more details.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="header-section center" id="events">
+        <h2> Events </h2>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="img/webinar1.jpg" alt="Avatar" style="width:50%;height: 50%; ">
+            <h4>Webinar</h4>
+            <button onclick="openPopUp()"> Register</button>
+            <!-- <p>We help people to loose 6-10 Kgs weight in 60 days in a healthy way. </p> -->
+        </div>
+       
+        
+  </div>
+
+  
+ 
+  
+    <div class="header-section center" id="testimonials">
+        <h2> TESTIMONIALS</h2>
+    </div>
+
+    <div class="slider" style="
+            --width: 300px;
+            --height: 600px;
+            margin-bottom: 30px;
+            --quantity: 5;
+        ">
+        <div class="list">
+            <div class="item" style="--position: 1"><img src="img/testimonials/1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="img/testimonials/2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="img/testimonials/3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="img/testimonials/4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="img/testimonials/5.jpg" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="header-section center">
+        <h2> FOOD PLATES</h2>
+    </div>
+
+    <div class="slider" reverse=true style="
+    --width: 300px;
+    --height: 600px;
+    --quantity: 12;">
+        <div class="list">
+            <div class="item" style="--position: 1"><img src="img/plates/1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="img/plates/2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="img/plates/3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="img/plates/4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="img/plates/5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="img/plates/6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="img/plates/7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="img/plates/8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="img/plates/9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="img/plates/10.jpg" alt=""></div>
+            <div class="item" style="--position: 11"><img src="img/plates/11.jpg" alt=""></div>
+            <div class="item" style="--position: 12"><img src="img/plates/12.jpg" alt=""></div>
+
+
+
+
+        </div>
+    </div>
+
+    <div id="popup">
+        <div class="popup-content">
+            <h4 style="text-align: center;">Contact </h4>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="0e5c26a9-e7bb-4190-a361-0f958ddbbe53">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-submit" >Submit</button>
+                <button type="button" class="btn btn-close" onclick="closePopup()">Close</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+</body>
+
+</html>

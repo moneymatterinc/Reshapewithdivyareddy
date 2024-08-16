@@ -9,6 +9,10 @@ body{
     font-size: xx-large;
 }
 
+.events{
+    display: grid;
+    grid-template-rows: 2;
+}
 
 .header {
     display: flex;
@@ -19,7 +23,7 @@ body{
 }
 
 .header-section {
-    flex: 1;
+    flex: auto;
     text-align: center;
 }
 
@@ -29,6 +33,52 @@ body{
 
 .header-section.right {
     text-align: right;
+}
+
+
+@media (max-width: 480px) {
+
+    body{
+        font-size: x-small;
+    }
+    
+    .header {
+        padding: 5px 10px;
+    }
+
+    .header-section {
+        margin: 5px 0;
+    }
+
+    .menu-toggle {
+        font-size: 0.6em;
+    }
+
+    .menu-toggle {
+        font-size: 1.6em;
+    }
+    /* Reduce font size for mobile screens */
+    .header-section p {
+        font-size: 1.2em; /* Adjust this value as needed */
+    }
+
+   
+    .header-section.right  {
+        font-size: 0.2em; /* Adjust this value as needed */
+       
+    }
+    
+
+    .header-section.left button{
+        border: #f44336;
+        padding : 0px 24px;
+    }
+
+    .faq-question {
+        font-size: x-small;
+    }
+
+   
 }
 
 button {

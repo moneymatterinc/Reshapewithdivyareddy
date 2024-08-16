@@ -1,3 +1,16 @@
+function updateHeaderText() {
+    const headerTextElement = document.querySelector('.menu-toggle');
+
+    if (window.innerWidth <= 480) {
+        headerTextElement.textContent = '☰'; // Change to your desired mobile text
+    } else {
+        headerTextElement.textContent = '☰ Menu'; // Default text for larger screens
+    }
+}
+
+window.addEventListener('load', updateHeaderText);
+window.addEventListener('resize', updateHeaderText);
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "400px";
   }
